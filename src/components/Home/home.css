@@ -1,0 +1,125 @@
+.hero-container {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 10px;
+    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2clMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+}
+
+img {
+    width: 100%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.post-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-wrap img {
+    height: 250px;
+}
+
+.side-post h6 {
+    font-weight: bold;
+}
+
+.second-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.second-post .post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post .fs-6 {
+    font-weight: bolder;
+}
+
+.third-post-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.7rem;
+    align-items: center;
+}
+
+.third-post-container .post {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.newsletter {
+    height: 90vh;
+}
+
+.newsletter img {
+    height: 250px;
+}
+
+
+.news-wrap {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .third-post-container {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .post-wrap {
+        flex-direction: row;
+    }
+
+    .second-post {
+        grid-template-columns: repeat(3,1fr)
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+   
+    .second-post {
+        grid-template-columns: repeat(4,1fr)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
